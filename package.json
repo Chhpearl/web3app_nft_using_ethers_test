@@ -1,0 +1,58 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "umi dev --cn"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,less,md,json}": [
+      "prettier --write"
+    ],
+    "*.ts?(x)": [
+      "prettier --parser=typescript --write"
+    ]
+  },
+  "dependencies": {
+    "@ethersproject/providers": "^5.6.8",
+    "@umijs/preset-react": "1.x",
+    "@web3-react/core": "^6.1.9",
+    "@web3-react/injected-connector": "^6.0.7",
+    "ahooks": "^3.1.5",
+    "antd": "4.23.0",
+    "ethers": "^5.7.2",
+    "immutability-helper": "^3.1.1",
+    "lodash-es": "^4.17.21",
+    "react-dnd": "^16.0.1",
+    "react-dnd-html5-backend": "^16.0.1",
+    "react-highlight-words": "^0.17.0",
+    "react-infinite-scroll-component": "^6.1.0",
+    "umi": "^3.5.25",
+    "use-immer": "0.5.0",
+    "web3": "^1.8.1"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.191",
+    "@types/numeral": "^2.0.2",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@types/react-highlight-words": "^0.16.4",
+    "@umijs/preset-ui": "^2.2.9",
+    "@umijs/test": "^3.4.20",
+    "ali-oss-deploy": "^1.0.4",
+    "concurrently": "^6.2.0",
+    "copy-webpack-plugin": "^6.4.1",
+    "cross-env": "^7.0.3",
+    "events": "^3.3.0",
+    "file-loader": "^6.2.0",
+    "lint-staged": "^10.0.7",
+    "mini-css-extract-plugin": "^1.6.2",
+    "postcss-px2rem": "^0.3.0",
+    "prettier": "^2.2.0",
+    "react": "17.x",
+    "react-dom": "17.x",
+    "typescript": "^4.1.2",
+    "yorkie": "^2.0.0"
+  }
+}
